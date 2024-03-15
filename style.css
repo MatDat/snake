@@ -1,0 +1,30 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #889bbb;
+}
+body {
+  padding: 20px 35px;
+}
+h1 {
+  font-size: 80px;
+  color: #90df90;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 0 #000;
+}
+.cell {
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  background-color: #777;
+  border-right: 1px dashed darkgray;
+  border-bottom: 1px dashed darkgray;
+}
+#boardContainer {
+  display: grid;
+  grid-template-columns: repeat(var(--boardWidth), max-content);
+  border-left: 1px dashed darkgray;
+  border-top: 1px dashed darkgray;
+  width: fit-content;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+}
